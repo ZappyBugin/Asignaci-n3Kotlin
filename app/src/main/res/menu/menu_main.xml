@@ -17,4 +17,14 @@
         android:id="@+id/action_option4"
         android:title="Option 4"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option7"
+        android:title="Problema7"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option8"
+        android:title="Problema8"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
 </menu>
