@@ -17,4 +17,9 @@
         android:id="@+id/action_option4"
         android:title="Option 4"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option6"
+        android:title="Option 6"
+        app:showAsAction="never" />
+
 </menu>

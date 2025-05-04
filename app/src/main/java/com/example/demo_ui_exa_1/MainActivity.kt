@@ -55,6 +55,14 @@ class MainActivity : AppCompatActivity(){
                 }
                 true
             }
+            R.id.action_option6 -> {
+                supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.fragment_container, FragmentOption6())
+                    addToBackStack(null)
+                    commit()
+                }
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
