@@ -70,6 +70,21 @@ class MainActivity : AppCompatActivity(){
                     commit()
                 }
                 true
+            }R.id.action_option7 -> {
+                supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.fragment_container, FragmentOption7())
+                    addToBackStack(null)
+                    commit()
+                }
+                true
+            }
+            R.id.action_option8 -> {
+                supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.fragment_container, FragmentOption8())
+                    addToBackStack(null)
+                    commit()
+                }
+                true
             }
             else -> super.onOptionsItemSelected(item)
         }
