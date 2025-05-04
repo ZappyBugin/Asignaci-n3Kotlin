@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Demo_UI_exa_1</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Demo UI Exa 1</string>
+    <string-array name="colores_array">
+        <item>Azul</item>
+        <item>Amarillo</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Verde</item>
+        <item>Morado</item>
+    </string-array>
 </resources>

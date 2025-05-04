@@ -17,4 +17,8 @@
         android:id="@+id/action_option4"
         android:title="Option 4"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option5"
+        android:title="Spinner"
+        app:showAsAction="never" />
 </menu>
