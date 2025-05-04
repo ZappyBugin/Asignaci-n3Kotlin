@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Demo UI Exa 1</string>
     <string-array name="colores_array">
+        <item>Blanco</item>
         <item>Azul</item>
         <item>Amarillo</item>
         <item>Rojo</item>

@@ -8,6 +8,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
 class FragmentOption5 : Fragment() {
@@ -28,12 +29,33 @@ class FragmentOption5 : Fragment() {
         spinner.adapter = adapter
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>, viewItem: View?, position: Int, id: Long
+            ) {
                 val colorSeleccionado = parent.getItemAtPosition(position).toString()
-                Toast.makeText(requireContext(), "Color seleccionado: $colorSeleccionado", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Color seleccionado: $colorSeleccionado",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+                val colorResId = when (colorSeleccionado.lowercase()) {
+                    "blanco" -> R.color.white
+                    "rojo" -> R.color.rojo
+                    "verde" -> R.color.verde
+                    "azul" -> R.color.azul
+                    "amarillo" -> R.color.amarillo
+                    "naranja" -> R.color.naranja
+                    "morado" -> R.color.morado
+                    else -> R.color.white
+                }
+
+                val color = ContextCompat.getColor(requireContext(), colorResId)
+                view.setBackgroundColor(color)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
+                // No hacer nada
             }
         }
 

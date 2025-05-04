@@ -23,16 +23,16 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/action_option6"
-        android:title="Option 6"
+        android:title="RadioGroup"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_option7"
-        android:title="Problema7"
+        android:title="DatePicker"
         android:orderInCategory="1"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_option8"
-        android:title="Problema8"
+        android:title="ListView"
         android:orderInCategory="2"
         app:showAsAction="never" />
 </menu>
