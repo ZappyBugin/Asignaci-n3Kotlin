@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_fondo">
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del queso"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imgQueso"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLeyenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leyenda"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:textStyle="bold"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="?attr/actionBarSize"
-    android:background="#4D2020"
+    android:background="@drawable/fondo_date"
     android:orientation="vertical"
     tools:context=".FragmentOption7">
 
@@ -46,6 +46,11 @@
         android:text=""
         android:textColor="#FFA500"
         android:textSize="30sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
